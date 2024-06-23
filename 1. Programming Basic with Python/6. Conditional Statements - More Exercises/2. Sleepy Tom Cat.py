@@ -8,7 +8,7 @@ work_days_play_time = 63
 # needed play rtime
 norm = 30000
 
-# working days
+# working number_of_days
 year_working_days = 365
 working_days = year_working_days - number_of_rest_days
 
