@@ -24,5 +24,5 @@ while command != 'End':
             print(f'{name} got water')
         else:
             print(f'{name} must wait')
-
+    command = input()
 print(f'{liters} liters left')
