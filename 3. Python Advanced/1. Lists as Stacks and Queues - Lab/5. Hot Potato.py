@@ -1,14 +1,11 @@
-text = input()
-stack = []
+from collections import deque
 
-for index in range(len(text)):
+kids = deque(input().split())
+n = int(input()) -1
 
-    if text[index] == '(':
+while len(kids) > 1:
+    kids.rotate(-n)
+    removed_kid = kids.popleft()
+    print(f'Removed {removed_kid}')
 
-        stack.append(index)
-
-    elif text[index] == ')':
-
-        start_index = stack.pop()
-        end_index = index + 1
-        print(text[start_index:end_index])
+print(f'Last is {kids[0]}')
