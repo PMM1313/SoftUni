@@ -2,14 +2,14 @@ from collections import deque
 import time
 
 # Test data
-n = 1_000_000
+n = 10_000_000
 lst = list(range(n))
 dq = deque(range(n))
 
 # Timing pop from the end of a list
 start = time.time()
-while lst:
-    lst.pop()
+for item in reversed(lst):
+    lst.pop(item)
 list_time = time.time() - start
 
 # Timing pop from the end of a deque
