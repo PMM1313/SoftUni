@@ -1,29 +1,27 @@
-
 number = int(input())
 
 stack = []
 iterations = 0
 
-while iterations <= number:
-    
-    iterations += 1
+while iterations < number:
     command = input()
+    iterations += 1
 
-    if '1' in command:
-        list = command.split()
-        number = int(list[1])
-        stack.append(number)
+    if command.startswith('1'):  # Push operation
+        _, num = command.split()
+        stack.append(int(num))
 
-    elif '2' in command:
-        stack.pop()
+    elif command == '2':  # Pop operation
+        if stack:
+            stack.pop()
 
-    elif '3' in command:
-        max_number = max(stack)
-        print(max_number)
+    elif command == '3':  # Print maximum
+        if stack:
+            print(max(stack))
 
-    elif '4' in command:
-        min_number = min(stack)
-        print(min_number)
+    elif command == '4':  # Print minimum
+        if stack:
+            print(min(stack))
 
-while stack:
-    print(stack.pop(), end=' ')
+# Print stack from top to bottom in the required format
+print(", ".join(map(str, reversed(stack))))
