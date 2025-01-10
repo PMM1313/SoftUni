@@ -1,4 +1,7 @@
-string = list(input().split())
+numbers = input().split()
 
-while string:
-    print(string.pop(), end=' ')
+stack = []
+while numbers:
+    stack.append(numbers.pop())
+
+print(" ".join(stack))
