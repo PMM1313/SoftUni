@@ -31,4 +31,25 @@ while presents > 0:
         if matrix[r][c] == "V":
             presents -= 1
             nice_kids_gifted += 1
-            matrix[r][c] = "-"  # Mark the gifted present
+            matrix[r][c] = "-"
+        elif matrix[r][c] == "C":
+            for directions in directions.values():
+                next_r, next_c = r + directions[0], c + directions[1]
+                if matrix[next_r][next_c] in ["V", "X"] and presents > 0:
+                    presents -= 1
+                    if matrix[next_r][next_c] == "V":
+                        nice_kids_gifted += 1
+                    matrix[next_r][next_c] = "-"
+        matrix[santa[0]][santa[1]] = "-"
+        santa = [r, c]
+        matrix[r][c] = "S"
+
+if presents < 1 and nice_kids - nice_kids_gifted > 0:
+    print("Santa ran out of presents!")
+
+[print(*row) for row in matrix]
+
+if nice_kids - nice_kids_gifted > 0:
+    print(f"No presents for {nice_kids - nice_kids_gifted} nice kid/s.")
+else:
+    print(f"Good job, Santa! {nice_kids_gifted} happy nice kid/s.")
