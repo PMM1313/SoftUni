@@ -1,0 +1,109 @@
+.html
+- - - index.html
+.js
+- - - index.js
+.pptx
+- - - demo.pptx
+.py
+- - - 01. File Opener.py
+- - - 01. Numbers Dictionary.py
+- - - 01. So Many Exceptions.py
+- - - 01_Even_Lines.py
+- - - 02. Email Validator.py
+- - - 02. File Reader.py
+- - - 02. Repeat Text.py
+- - - 02_Line_Numbers.py
+- - - 03. File Writer.py
+- - - 03. Password Validator.py
+- - - 03. Value Cannot Be Negative.py
+- - - 03_File_Manipulator.py
+- - - 04. File Delete.py
+- - - 04. Rotate Matrix.py
+- - - 04_Directory_Traversal.py
+- - - 05. Online Banking.py
+- - - 05. Word Count.py
+- - - 1. Count Same Values.py
+- - - 1. Diagonals.py
+- - - 1. Flatten Lists.py
+- - - 1. Multiplication Function.py
+- - - 1. Negative vs Positive.py
+- - - 1. Numbers.py
+- - - 1. Reverse Numbers.py
+- - - 1. Reverse Strings.py
+- - - 1. Sum Matrix Elements.py
+- - - 1. Unique Usernames.py
+- - - 2. Diagonal Difference 1.py
+- - - 2. Even Matrix.py
+- - - 2. Expression Evaluator.py
+- - - 2. Keyword Arguments Length.py
+- - - 2. Matching Parentheses.py
+- - - 2. Matrix Modification.py
+- - - 2. Person Info.py
+- - - 2. Sets of Elements.py
+- - - 2. Stacked Queries.py
+- - - 2. Students' Grades.py
+- - - 3. 2x2 Squares in Matrix.py
+- - - 3. Cheese Showcase.py
+- - - 3. Even or Odd.py
+- - - 3. Fast Food.py
+- - - 3. Flattening Matrix.py
+- - - 3. Knight Game.py
+- - - 3. Milkshakes.py
+- - - 3. Periodic Table.py
+- - - 3. Record Unique Names.py
+- - - 3. Supermarket.py
+- - - 4. Count Symbols.py
+- - - 4. Easter Bunny.py
+- - - 4. Fashion Boutique.py
+- - - 4. Honey.py
+- - - 4. Maximal Sum.py
+- - - 4. Numbers Filter.py
+- - - 4. Parking Lot.py
+- - - 4. Rectangle.py
+- - - 4. Sum Matrix Columns.py
+- - - 4. Water Dispenser.py
+- - - 5. Alice in Wonderland.py
+- - - 5. Concatenate.py
+- - - 5. Hot Potato.py
+- - - 5. Longest Intersection.py
+- - - 5. Matrix of Palindromes.py
+- - - 5. Operate.py
+- - - 5. Primary Diagonal.py
+- - - 5. Santa's Present Factory.py
+- - - 5. SoftUni Party.py
+- - - 5. Truck Tour.py
+- - - 6. Balanced Parentheses.py
+- - - 6. Battle of Names.py
+- - - 6. Function Executor.py
+- - - 6. Matrix Shuffling.py
+- - - 6. Paint Colors.py
+- - - 6. Range Day.py
+- - - 6. Recursive Power.py
+- - - 6. Symbol in Matrix.py
+- - - 7. Grocery.py
+- - - 7. Present Delivery.py
+- - - 7. Snake Moves.py
+- - - 7. Square with Maximum Sum.py
+- - - 8. Age Assignment.py
+- - - 9. Recursion Palindrome.py
+- - - __init__.py
+- - - program.py
+- - - python.py
+- - - test - list or deque poping.py
+- - - test.py
+- - - test.py
+.txt
+- - - example.txt
+- - - input.txt
+- - - log.txt
+- - - notes.txt
+- - - numbers.txt
+- - - output.txt
+- - - output.txt
+- - - report.txt
+- - - text.txt
+- - - text.txt
+- - - text.txt
+- - - text2.txt
+- - - text3.txt
+- - - words.txt
