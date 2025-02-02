@@ -93,4 +93,9 @@ while True:
 
     if winner:
         break
+
     turns_count += 1
+
+    if turns_count == 10:
+        print("No winner - game over")
+        break
