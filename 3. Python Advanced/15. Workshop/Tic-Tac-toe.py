@@ -3,7 +3,7 @@ class InvalidPositionNumber(Exception):
 class PositionAlreadyTaken(Exception):
     pass
 
-def obtain_valid_position(player, matrix, turns_count):
+def obtain_valid_position(player, matrix):
     while True:
         try:
             selected_position = int(input(f"{player}, please select a position"))
@@ -66,7 +66,7 @@ def is_winner(player_symbol, matrix):
             return True
 
     for col_index in range(matrix_length):
-        if all([matrix[row_index][col_index] == player_symbol for row_index in range(matrix_length)])
+        if all([matrix[row_index][col_index] == player_symbol for row_index in range(matrix_length)]):
             return True
 
     main_diagonal_winner = [matrix[index][index] == player_symbol for index in range(matrix_length)]
@@ -75,23 +75,28 @@ def is_winner(player_symbol, matrix):
     if main_diagonal_winner or diagonal_winner:
 
         return True
-
     return False
+
+def print_board(board):
+    for row in board:
+        print(f"|  {'  |  '.join(row)}  |")
+
 def play_turn(player_symbol, row, col, matrix, turns_count):
     matrix[row][col] = player_symbol
 
     if turns_count >= 5:
         is_winner(player_symbol, matrix)
-
+    print_board(matrix)
 turns_count = 1
 while True:
     current_player_name = player2_name if turns_count %2 == 0 else player1_name
-    position = obtain_valid_position(current_player_name, matrix, turns_count)
+    position = obtain_valid_position(current_player_name, matrix)
     row, col = position_mapper[position]
     player_symbol = player_to_symbol[current_player_name]
     winner = play_turn(player_symbol, row, col, matrix, turns_count)
 
     if winner:
+        print("You Won!")
         break
 
     turns_count += 1
