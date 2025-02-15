@@ -1,7 +1,7 @@
 file = open("numbers.txt")
 
 content = file.readlines()
-# print(content.split("\n"))
+# print(content.split("\map_size"))
 
 total_sum = 0
 for el in content:
