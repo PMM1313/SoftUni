@@ -1,7 +1,7 @@
 
 def classify_books(*args, **kwargs):
     fiction_books = {}
-    non_fiction_books = {}
+    no_fiction_books = {}
 
     for genre, title in args:
         for isbn, book_title in kwargs.items():
@@ -9,11 +9,11 @@ def classify_books(*args, **kwargs):
                 if genre == "fiction":
                     fiction_books[isbn] = title
                 else:
-                    non_fiction_books[isbn] = title
+                    no_fiction_books[isbn] = title
 
     fiction_sorted = sorted(fiction_books.items())
 
-    non_fiction_sorted = sorted(non_fiction_books.items(), reverse=True)
+    non_fiction_sorted = sorted(no_fiction_books.items(), reverse=True)
 
     result = []
 
