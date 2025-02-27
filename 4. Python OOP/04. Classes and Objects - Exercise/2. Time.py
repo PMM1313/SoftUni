@@ -23,7 +23,7 @@ class Time:
             self.minutes %= 60
 
         if self.hours > Time.max_hours:
-            self.max_hours %= 24
+            self.hours %= 24
 
         return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"
 

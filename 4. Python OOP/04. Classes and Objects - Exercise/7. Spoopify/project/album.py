@@ -11,10 +11,10 @@ class Album:
         if self.published:
             return "Cannot add songs. Album is published."
         if song in self.songs:
-            return "Song is already in the albums."
+            return "Song is already in the album."
 
         self.songs.append(song)
-        return f"Song {song.name} has been added to the albums {self.name}."
+        return f"Song {song.name} has been added to the album {self.name}."
 
     def remove_song(self, song_name: str):
         if self.published:
@@ -23,9 +23,9 @@ class Album:
         s = next((s for s in self.songs if s.name == song_name), None)
         if s:
             self.songs.remove(s)
-            return f"Removed song {s.name} from albums {self.name}."
+            return f"Removed song {s.name} from album {self.name}."
 
-        return f"Song is not in the albums."
+        return f"Song is not in the album."
 
     def publish(self):
         if self.published:
@@ -35,4 +35,4 @@ class Album:
         return f"Album {self.name} has been published."
 
     def details(self):
-        return f"Album {self.name}\n" + "\n"'== '.join(Song.get_info(song) for song in self.songs)
+        return f"Album {self.name}\n" + "\n".join(f"== {song.get_info()}" for song in self.songs)
