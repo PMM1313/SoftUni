@@ -1,6 +1,6 @@
 from typing import List, Type
 
-from project.animals.animals import Mammal
+from project.animals.animal import Mammal
 from project.food import Food, Seed, Vegetable, Fruit, Meat
 
 
