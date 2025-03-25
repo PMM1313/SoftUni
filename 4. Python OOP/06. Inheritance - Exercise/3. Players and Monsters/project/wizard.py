@@ -1,6 +1,4 @@
-from wsgiref.headers import Headers
-
-from project.hero import Hero
+from project import Hero
 
 
 class Wizard(Hero):

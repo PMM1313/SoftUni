@@ -1,5 +1,5 @@
-from project.guild import Guild
-from project.player import Player
+from project import Guild
+from project import Player
 
 player = Player("George", 50, 100)
 player2 = Player("Pesho", 50, 100)

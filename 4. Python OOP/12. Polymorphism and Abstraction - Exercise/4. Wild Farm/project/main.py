@@ -1,5 +1,5 @@
-from project.animals.mammals import Mouse, Dog, Cat, Tiger
-from project.food import Vegetable, Fruit, Meat
+from project import Cat
+from project import Vegetable, Fruit, Meat
 
 cat = Cat("Harry", 10, "basement")
 

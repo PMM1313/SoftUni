@@ -1,6 +1,6 @@
 from typing import List, Dict
 
-from project.user import User
+from project import User
 
 
 class Library:

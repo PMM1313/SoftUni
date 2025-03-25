@@ -1,10 +1,10 @@
-from project.category import Category
+from project import Category
 
-from project.document import Document
+from project import Document
 
-from project.storage import Storage
+from project import Storage
 
-from project.topic import Topic
+from project import Topic
 
 
 
