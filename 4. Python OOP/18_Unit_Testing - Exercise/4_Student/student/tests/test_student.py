@@ -46,7 +46,7 @@ class TestStudent(TestCase):
         self.assertEqual(["n1", "n2"], self.student1.courses["Java"])
 
     def test_enroll_in_non_existing_course_adding_notes_with_Y(self):
-        result = self.student1.enroll("Java", ["n1", "n2"])
+        result = self.student1.enroll("Java", ["n1", "n2"], "Y")
 
         self.assertIn("Java", self.student1.courses)
         self.assertEqual("Course and course notes have been added.", result)
