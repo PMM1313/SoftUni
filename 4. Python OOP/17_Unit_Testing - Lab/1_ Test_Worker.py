@@ -1,4 +1,3 @@
-
 class Worker:
 
     def __init__(self, name, salary, energy):
@@ -21,7 +20,7 @@ class Worker:
         return f'{self.name} has saved {self.money} money.'
 
 
-from unittest import TestCase
+from unittest import TestCase, main
 
 
 class TestWorker(TestCase):
@@ -93,3 +92,7 @@ class TestWorker(TestCase):
         result = worker.get_info()
         # Assert
         self.assertEqual(f'Test has saved 0 money.', result)
+
+
+if __name__ == "__main__":
+    main()
