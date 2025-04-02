@@ -107,7 +107,7 @@ class FlowerShopManager:
 
         result += f"~~Clients number: {len(sorted_clients)}~~\n"
         for c in sorted_clients:
-            result += c.client_details()
+            result += c.client_details() + "\n"
         return result[:-1]
 
     def filter_client_by_phone(self, phone_number):
